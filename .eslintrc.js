@@ -1,16 +1,11 @@
+const path = require('path');
+
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true
-    },
     "extends": "airbnb",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+    "settings": {
+        "import/resolver": {
+            node: { paths: [path.resolve('./src')]}
+        },
     },
     "rules": {
         "no-unused-vars": 1,
