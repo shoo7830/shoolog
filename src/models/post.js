@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const Post = new Schema({
-    tite: String,
+    title: String,
     body: String,
     tags: [String],
     publishedDate: {
